@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <servlet-name>WebChatServlet</servlet-name>
+    <servlet-class>com.webChat.web.servlet.WebChatServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AccessTokenServlet</servlet-name>
+    <servlet-class>com.webChat.web.servlet.AccessTokenServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>FileUploadServlet</servlet-name>
+    <servlet-class>com.webChat.web.servlet.FileUploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpadtePropertiesServlet</servlet-name>
+    <servlet-class>com.webChat.web.servlet.UpadtePropertiesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetWebChatServerUtilServlet</servlet-name>
+    <servlet-class>com.webChat.web.servlet.GetWebChatServerUtilServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddKfAccountServlet</servlet-name>
+    <servlet-class>com.webChat.web.servlet.AddKfAccountServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddUsersGroupServlet</servlet-name>
+    <servlet-class>com.webChat.web.servlet.AddUsersGroupServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetUsersListServlet</servlet-name>
+    <servlet-class>com.webChat.web.servlet.GetUsersListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SetUserRemarkNameServlet</servlet-name>
+    <servlet-class>com.webChat.web.servlet.SetUserRemarkNameServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetUsersInfoServlet</servlet-name>
+    <servlet-class>com.webChat.web.servlet.GetUsersInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>HttpUtil</servlet-name>
+    <servlet-class>com.webChat.js_sdk.servlet.HttpUtil</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetMenuServlet</servlet-name>
+    <servlet-class>com.webChat.web.servlet.GetMenuServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddMenuServlet</servlet-name>
+    <servlet-class>com.webChat.web.servlet.AddMenuServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DelMenuServlet</servlet-name>
+    <servlet-class>com.webChat.web.servlet.DelMenuServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>WebChatServlet</servlet-name>
+    <url-pattern>/WebChatServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AccessTokenServlet</servlet-name>
+    <url-pattern>/AccessTokenServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FileUploadServlet</servlet-name>
+    <url-pattern>/FileUploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpadtePropertiesServlet</servlet-name>
+    <url-pattern>/UpadtePropertiesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetWebChatServerUtilServlet</servlet-name>
+    <url-pattern>/GetWebChatServerUtilServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddKfAccountServlet</servlet-name>
+    <url-pattern>/AddKfAccountServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddUsersGroupServlet</servlet-name>
+    <url-pattern>/AddUsersGroupServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetUsersListServlet</servlet-name>
+    <url-pattern>/GetUsersListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SetUserRemarkNameServlet</servlet-name>
+    <url-pattern>/SetUserRemarkNameServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetUsersInfoServlet</servlet-name>
+    <url-pattern>/GetUsersInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HttpUtil</servlet-name>
+    <url-pattern>/HttpUtil</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetMenuServlet</servlet-name>
+    <url-pattern>/GetMenuServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddMenuServlet</servlet-name>
+    <url-pattern>/AddMenuServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelMenuServlet</servlet-name>
+    <url-pattern>/DelMenuServlet</url-pattern>
+  </servlet-mapping>
+    <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
